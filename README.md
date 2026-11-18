@@ -3,7 +3,7 @@
 ### Android Remote Administration & Security Research Platform
 
 <p align="center">
-  <img src="assets/JACKFRUIT.png" width="220" alt="JACKFRUIT Logo">
+  <img src="JACKFRUIT.png" width="220" alt="JACKFRUIT Logo">
 </p>
 
 <p align="center">
