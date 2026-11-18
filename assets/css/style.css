@@ -1,554 +1,493 @@
-<<<<<<< HEAD
-mkdir -p assets/css
 
-cat > assets/css/style.css <<'EOF'
-=======
->>>>>>> bff5ef4 (Launch modern dark JACKFRUIT landing page)
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600&display=swap');
 
 :root {
-  --bg:#090d0b;
-  --surface:#111915;
-  --card:#151f19;
-  --green:#a3e635;
-  --white:#f1f5f2;
-  --muted:#89968e;
-  --border:#26352b;
+    --bg: #090d0b;
+    --surface: #111915;
+    --card: #151f19;
+    --green: #a3e635;
+    --white: #f1f5f2;
+    --muted: #89968e;
+    --border: #26352b;
+    --danger: #ef6464;
+    --warning: #e5b94b;
 }
 
-<<<<<<< HEAD
 * {
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  scroll-behavior:smooth;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
 }
-=======
-* { margin:0; padding:0; box-sizing:border-box; scroll-behavior:smooth; }
->>>>>>> bff5ef4 (Launch modern dark JACKFRUIT landing page)
 
 body {
-  background:var(--bg);
-  color:var(--white);
-  font-family:Inter,sans-serif;
-  line-height:1.7;
-  overflow-x:hidden;
+    background: var(--bg);
+    color: var(--white);
+    font-family: 'Inter', sans-serif;
+    line-height: 1.7;
+    overflow-x: hidden;
 }
 
-a { text-decoration:none; }
-<<<<<<< HEAD
-=======
-h1 span,h2 span,footer span,.brand span { color:var(--green); }
->>>>>>> bff5ef4 (Launch modern dark JACKFRUIT landing page)
+a {
+    text-decoration: none;
+}
+
+h1 span,
+h2 span,
+footer span,
+.brand span {
+    color: var(--green);
+}
+
+/* NAVIGATION */
 
 .navbar {
-  position:sticky;
-  top:0;
-  z-index:10;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  padding:18px 8%;
-<<<<<<< HEAD
-  background:#090d0bef;
-=======
-  background:#090d0bf2;
->>>>>>> bff5ef4 (Launch modern dark JACKFRUIT landing page)
-  border-bottom:1px solid var(--border);
-  backdrop-filter:blur(15px);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 8%;
+    background: rgba(9, 13, 11, .95);
+    border-bottom: 1px solid var(--border);
+    backdrop-filter: blur(15px);
 }
 
-<<<<<<< HEAD
 .brand {
-  color:white;
-  font-size:21px;
-  font-weight:900;
+    color: white;
+    font-size: 21px;
+    font-weight: 900;
 }
-
-.brand span,footer span,h1 span,h2 span { color:var(--green); }
-
-.nav-status {
-  font:10px 'JetBrains Mono',monospace;
-  color:var(--muted);
-  letter-spacing:1px;
-}
-
-.nav-status i {
-  display:inline-block;
-  width:7px;
-  height:7px;
-  background:var(--green);
-  border-radius:50%;
-  box-shadow:0 0 10px var(--green);
-}
-
-.hero {
-  min-height:820px;
-  padding:100px 20px 65px;
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  justify-content:center;
-=======
-.brand { color:white; font-size:21px; font-weight:900; }
 
 .status {
-  color:var(--muted);
-  font:10px 'JetBrains Mono',monospace;
-  letter-spacing:1px;
+    color: var(--muted);
+    font: 10px 'JetBrains Mono', monospace;
+    letter-spacing: 1px;
 }
 
 .status i {
-  display:inline-block;
-  width:7px;
-  height:7px;
-  margin-right:8px;
-  border-radius:50%;
-  background:var(--green);
-  box-shadow:0 0 12px var(--green);
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    margin-right: 8px;
+    border-radius: 50%;
+    background: var(--green);
+    box-shadow: 0 0 12px var(--green);
 }
 
+/* HERO */
+
 .hero {
-  min-height:790px;
-  padding:100px 20px 65px;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
->>>>>>> bff5ef4 (Launch modern dark JACKFRUIT landing page)
-  text-align:center;
-  background:radial-gradient(ellipse at 50% 35%,#28451e55,transparent 65%);
+    min-height: 790px;
+    padding: 100px 20px 65px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: radial-gradient(
+        ellipse at 50% 35%,
+        #28451e55,
+        transparent 65%
+    );
 }
 
 .eyebrow {
-<<<<<<< HEAD
-  color:var(--green);
-  border:1px solid #49652c;
-  border-radius:30px;
-  padding:9px 17px;
-=======
-  padding:9px 17px;
-  border:1px solid #49652c;
-  border-radius:30px;
-  color:var(--green);
->>>>>>> bff5ef4 (Launch modern dark JACKFRUIT landing page)
-  font:10px 'JetBrains Mono',monospace;
-  letter-spacing:2px;
+    padding: 9px 17px;
+    border: 1px solid #49652c;
+    border-radius: 30px;
+    color: var(--green);
+    font: 10px 'JetBrains Mono', monospace;
+    letter-spacing: 2px;
 }
 
 .logo {
-<<<<<<< HEAD
-  width:140px;
-  height:140px;
-  object-fit:cover;
-  border-radius:20px;
-  margin:38px 0 20px;
-=======
-  width:135px;
-  height:135px;
-  object-fit:cover;
-  border-radius:18px;
-  margin:35px 0 20px;
->>>>>>> bff5ef4 (Launch modern dark JACKFRUIT landing page)
-  box-shadow:0 0 50px #a3e63520;
+    width: 135px;
+    height: 135px;
+    object-fit: cover;
+    border-radius: 18px;
+    margin: 35px 0 20px;
+    box-shadow: 0 0 50px #a3e63520;
 }
 
-.intro,small {
-  color:var(--green);
-  font:11px 'JetBrains Mono',monospace;
-  letter-spacing:3px;
+.intro,
+small {
+    color: var(--green);
+    font: 11px 'JetBrains Mono', monospace;
+    letter-spacing: 3px;
 }
 
 h1 {
-<<<<<<< HEAD
-  font-size:clamp(55px,10vw,105px);
-=======
-  font-size:clamp(52px,10vw,105px);
->>>>>>> bff5ef4 (Launch modern dark JACKFRUIT landing page)
-  font-weight:900;
-  letter-spacing:-5px;
-  line-height:1.2;
+    font-size: clamp(52px, 10vw, 105px);
+    font-weight: 900;
+    letter-spacing: -5px;
+    line-height: 1.2;
 }
 
 .hero h2 {
-  font-size:clamp(27px,5vw,44px);
-  line-height:1.3;
-<<<<<<< HEAD
-  margin-top:30px;
-}
-
-.description {
-  max-width:550px;
-=======
-  margin-top:25px;
+    font-size: clamp(27px, 5vw, 44px);
+    line-height: 1.3;
+    margin-top: 25px;
 }
 
 .release {
-  color:var(--green);
-  background:#a3e63512;
-  border:1px solid #a3e63545;
-  padding:9px 16px;
-  border-radius:6px;
-  margin-top:25px;
-  font:11px 'JetBrains Mono',monospace;
-  letter-spacing:1px;
+    color: var(--green);
+    background: #a3e63512;
+    border: 1px solid #a3e63545;
+    padding: 9px 16px;
+    border-radius: 6px;
+    margin-top: 25px;
+    font: 11px 'JetBrains Mono', monospace;
+    letter-spacing: 1px;
 }
 
 .description {
-  max-width:600px;
->>>>>>> bff5ef4 (Launch modern dark JACKFRUIT landing page)
-  color:var(--muted);
-  margin-top:20px;
-  font-size:14px;
+    max-width: 600px;
+    color: var(--muted);
+    margin-top: 20px;
+    font-size: 14px;
 }
 
-<<<<<<< HEAD
-.coming {
-  margin-top:35px;
-  color:var(--green);
-  font:700 13px 'JetBrains Mono',monospace;
-  letter-spacing:5px;
-}
+/* BUTTONS */
 
 .buttons {
-  display:flex;
-  gap:13px;
-  flex-wrap:wrap;
-  justify-content:center;
-  margin-top:30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 13px;
+    margin-top: 28px;
 }
 
-.primary,.secondary {
-  display:inline-block;
-  padding:13px 22px;
-  border-radius:8px;
-=======
-.buttons {
-  display:flex;
-  justify-content:center;
-  flex-wrap:wrap;
-  gap:13px;
-  margin-top:28px;
+.primary,
+.secondary {
+    display: inline-block;
+    padding: 13px 21px;
+    border-radius: 7px;
+    font: 700 11px 'JetBrains Mono', monospace;
+    transition: .25s;
 }
 
-.primary,.secondary {
-  display:inline-block;
-  padding:13px 21px;
-  border-radius:7px;
->>>>>>> bff5ef4 (Launch modern dark JACKFRUIT landing page)
-  font:700 11px 'JetBrains Mono',monospace;
-  transition:.25s;
-}
-
-<<<<<<< HEAD
 .primary {
-  background:var(--green);
-  color:#11180c;
+    background: var(--green);
+    color: #10170c;
 }
 
 .primary:hover {
-  transform:translateY(-3px);
-  box-shadow:0 0 25px #a3e63555;
+    transform: translateY(-3px);
+    box-shadow: 0 0 25px #a3e63555;
 }
 
 .secondary {
-  color:white;
-  background:var(--surface);
-  border:1px solid var(--border);
+    background: var(--surface);
+    color: white;
+    border: 1px solid var(--border);
 }
 
-.secondary:hover { border-color:var(--green); }
-
-.scroll {
-  margin-top:75px;
-=======
-.primary { background:var(--green); color:#10170c; }
-.primary:hover { transform:translateY(-3px); box-shadow:0 0 25px #a3e63555; }
-.secondary { background:var(--surface); color:white; border:1px solid var(--border); }
-.secondary:hover { border-color:var(--green); color:var(--green); }
-
-.scroll {
-  margin-top:65px;
->>>>>>> bff5ef4 (Launch modern dark JACKFRUIT landing page)
-  color:var(--muted);
-  font:10px 'JetBrains Mono',monospace;
-  letter-spacing:3px;
+.secondary:hover {
+    border-color: var(--green);
+    color: var(--green);
 }
 
-<<<<<<< HEAD
+.scroll {
+    margin-top: 65px;
+    color: var(--muted);
+    font: 10px 'JetBrains Mono', monospace;
+    letter-spacing: 3px;
+}
+
+/* MAIN CONTENT */
+
 main {
-  max-width:1000px;
-  padding:0 25px;
-  margin:auto;
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 25px;
 }
 
 .section {
-  padding:85px 0;
-  border-top:1px solid var(--border);
+    padding: 85px 0;
+    border-top: 1px solid var(--border);
 }
 
-.section h2,.final h2 {
-  font-size:clamp(27px,5vw,38px);
-  margin:16px 0 22px;
-  letter-spacing:-1px;
+.section h2,
+.final h2 {
+    font-size: clamp(27px, 5vw, 38px);
+    margin: 17px 0 22px;
+    letter-spacing: -1px;
 }
 
-.section > p,.final > p {
-  color:var(--muted);
-  max-width:750px;
-  margin:12px 0;
-  font-size:14px;
-=======
-main { max-width:1000px; margin:auto; padding:0 25px; }
-
-.section {
-  padding:85px 0;
-  border-top:1px solid var(--border);
+.section > p,
+.final > p {
+    color: var(--muted);
+    max-width: 780px;
+    margin: 12px 0;
+    font-size: 14px;
 }
 
-.section h2,.final h2 {
-  font-size:clamp(27px,5vw,38px);
-  margin:17px 0 22px;
-  letter-spacing:-1px;
-}
-
-.section > p,.final > p {
-  color:var(--muted);
-  max-width:780px;
-  margin:12px 0;
-  font-size:14px;
-}
+/* SECURITY NOTICE */
 
 .warning {
-  margin-top:28px;
-  padding:22px;
-  border:1px solid #745a28;
-  border-left:3px solid #e5b94b;
-  border-radius:8px;
-  background:#211b101c;
->>>>>>> bff5ef4 (Launch modern dark JACKFRUIT landing page)
+    margin-top: 28px;
+    padding: 22px;
+    border: 1px solid #745a28;
+    border-left: 3px solid var(--warning);
+    border-radius: 8px;
+    background: #211b101c;
 }
 
-.warning strong { color:#e5c36a; }
-.warning p { color:var(--muted); font-size:13px; margin-top:7px; }
+.warning strong {
+    color: var(--warning);
+}
+
+.warning p {
+    color: var(--muted);
+    font-size: 13px;
+    margin-top: 7px;
+}
+
+/* FEATURE CARDS */
 
 .cards {
-  display:grid;
-  grid-template-columns:repeat(2,1fr);
-<<<<<<< HEAD
-  gap:17px;
-=======
-  gap:16px;
->>>>>>> bff5ef4 (Launch modern dark JACKFRUIT landing page)
-  margin-top:30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin-top: 30px;
 }
 
 .cards article {
-<<<<<<< HEAD
-  padding:25px;
-  background:var(--card);
-  border:1px solid var(--border);
-  border-radius:12px;
-  transition:.25s;
+    padding: 24px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    transition: .25s;
 }
 
 .cards article:hover {
-  border-color:var(--green);
-  transform:translateY(-4px);
+    border-color: var(--green);
+    transform: translateY(-3px);
 }
 
-.cards b,.cards label { color:var(--green); }
+.cards b,
+.cards label {
+    color: var(--green);
+}
 
-.cards b { font:14px 'JetBrains Mono',monospace; }
+.cards b {
+    font: 14px 'JetBrains Mono', monospace;
+}
 
-.cards h3 { margin:10px 0; }
+.cards h3 {
+    margin: 10px 0;
+}
 
-.cards p,.note {
-  color:var(--muted);
-  font-size:13px;
+.cards p {
+    color: var(--muted);
+    font-size: 13px;
 }
 
 .cards label {
-  display:block;
-  margin-top:16px;
-  font:10px 'JetBrains Mono',monospace;
-  letter-spacing:2px;
+    display: block;
+    margin-top: 15px;
+    font: 10px 'JetBrains Mono', monospace;
+    letter-spacing: 2px;
 }
 
-.tech,.principles {
-  display:flex;
-  flex-wrap:wrap;
-  gap:12px;
-  margin-top:25px;
-}
-
-.tech span,.principles p {
-  padding:12px 18px;
-  background:var(--card);
-  border:1px solid var(--border);
-  border-radius:7px;
-  color:var(--green);
-  font:11px 'JetBrains Mono',monospace;
-}
-
-.note { margin-top:20px; }
-
-.final {
-  text-align:center;
-  padding:85px 20px;
-  background:radial-gradient(ellipse at center,#28451e35,transparent 70%);
-}
-
-.final > p {
-  margin:0 auto 25px;
-=======
-  padding:24px;
-  background:var(--card);
-  border:1px solid var(--border);
-  border-radius:10px;
-  transition:.25s;
-}
-
-.cards article:hover { border-color:var(--green); transform:translateY(-3px); }
-.cards b,.cards label { color:var(--green); }
-.cards b { font:14px 'JetBrains Mono',monospace; }
-.cards h3 { margin:10px 0; }
-.cards p { color:var(--muted); font-size:13px; }
-.cards label { display:block; margin-top:15px; font:10px 'JetBrains Mono',monospace; letter-spacing:2px; }
+/* FILE TREE */
 
 .tree {
-  margin:25px 0;
-  padding:25px;
-  overflow-x:auto;
-  border:1px solid var(--border);
-  border-radius:10px;
-  background:#050806;
-  color:var(--green);
-  font:12px/2 'JetBrains Mono',monospace;
+    margin: 25px 0;
+    padding: 25px;
+    overflow-x: auto;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background: #050806;
+    color: var(--green);
+    font: 12px/2 'JetBrains Mono', monospace;
 }
 
-.text-link { color:var(--green); font:11px 'JetBrains Mono',monospace; }
-
-.subheading { margin-top:28px; font-size:15px; }
-
-.tech,.principles {
-  display:flex;
-  flex-wrap:wrap;
-  gap:11px;
-  margin-top:17px;
+.text-link {
+    color: var(--green);
+    font: 11px 'JetBrains Mono', monospace;
 }
 
-.tech span,.principles p {
-  padding:11px 16px;
-  background:var(--card);
-  border:1px solid var(--border);
-  border-radius:7px;
-  color:var(--green);
-  font:11px 'JetBrains Mono',monospace;
+/* TECHNOLOGY */
+
+.subheading {
+    margin-top: 28px;
+    font-size: 15px;
 }
 
-.note { margin-top:15px; color:var(--muted); font-size:12px; }
+.tech,
+.principles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 11px;
+    margin-top: 17px;
+}
+
+.tech span,
+.principles p {
+    padding: 11px 16px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 7px;
+    color: var(--green);
+    font: 11px 'JetBrains Mono', monospace;
+}
+
+.note {
+    margin-top: 15px;
+    color: var(--muted);
+    font-size: 12px;
+}
+
+/* USER GUIDE */
 
 .guide {
-  display:grid;
-  grid-template-columns:repeat(2,1fr);
-  gap:15px;
-  margin-top:30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 30px;
 }
 
 .guide article {
-  padding:22px;
-  border:1px solid var(--border);
-  background:var(--card);
-  border-radius:9px;
+    padding: 22px;
+    border: 1px solid var(--border);
+    background: var(--card);
+    border-radius: 9px;
+    transition: .25s;
 }
 
-.guide b { color:var(--green); font:11px 'JetBrains Mono',monospace; }
-.guide h3 { margin:10px 0; }
-.guide p { color:var(--muted); font-size:13px; margin:8px 0; }
+.guide article:hover {
+    border-color: var(--green);
+}
+
+.guide b {
+    color: var(--green);
+    font: 11px 'JetBrains Mono', monospace;
+}
+
+.guide h3 {
+    margin: 10px 0;
+}
+
+.guide p {
+    color: var(--muted);
+    font-size: 13px;
+    margin: 8px 0;
+}
 
 .guide code {
-  display:block;
-  margin-top:12px;
-  padding:12px;
-  overflow-wrap:anywhere;
-  border-radius:5px;
-  background:#050806;
-  color:var(--green);
-  font:11px 'JetBrains Mono',monospace;
+    display: block;
+    margin-top: 12px;
+    padding: 12px;
+    overflow-wrap: anywhere;
+    border-radius: 5px;
+    background: #050806;
+    color: var(--green);
+    font: 11px 'JetBrains Mono', monospace;
 }
 
-.guide .text-link { display:inline-block; margin-top:15px; }
+.guide .text-link {
+    display: inline-block;
+    margin-top: 15px;
+}
+
+/* FINAL CTA */
 
 .final {
-  padding:85px 20px;
-  text-align:center;
-  background:radial-gradient(ellipse at center,#28451e35,transparent 70%);
->>>>>>> bff5ef4 (Launch modern dark JACKFRUIT landing page)
+    padding: 85px 20px;
+    text-align: center;
+    background: radial-gradient(
+        ellipse at center,
+        #28451e35,
+        transparent 70%
+    );
 }
 
-.final > p { margin:0 auto 20px; }
+.final > p {
+    margin: 0 auto 20px;
+}
+
+/* FOOTER */
 
 footer {
-<<<<<<< HEAD
-  padding:50px 20px;
-=======
-  padding:45px 20px;
->>>>>>> bff5ef4 (Launch modern dark JACKFRUIT landing page)
-  text-align:center;
-  background:#070a08;
-  border-top:1px solid var(--border);
+    padding: 45px 20px;
+    text-align: center;
+    background: #070a08;
+    border-top: 1px solid var(--border);
 }
 
-footer h3 { font-size:23px; }
-<<<<<<< HEAD
+footer h3 {
+    font-size: 23px;
+}
 
 footer p {
-  color:var(--muted);
-  font:10px 'JetBrains Mono',monospace;
-  letter-spacing:2px;
-  margin:12px;
+    color: var(--muted);
+    margin: 12px;
+    font: 10px 'JetBrains Mono', monospace;
+    letter-spacing: 1px;
 }
 
-footer a { color:var(--green); font-size:12px; }
+.footer-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin: 25px;
+}
+
+.footer-links a {
+    color: var(--muted);
+    font-size: 12px;
+}
+
+.footer-links a:hover {
+    color: var(--green);
+}
 
 footer .copyright {
-  margin-top:30px;
-  padding-top:25px;
-  border-top:1px solid var(--border);
+    border-top: 1px solid var(--border);
+    padding-top: 23px;
 }
 
-@media(max-width:650px) {
-  .navbar { padding:16px 5%; }
-  .nav-status { font-size:8px; }
-  .hero { min-height:720px; padding-top:75px; }
-  h1 { letter-spacing:-3px; }
-  .cards { grid-template-columns:1fr; }
-  .section { padding:65px 0; }
-=======
-footer p { color:var(--muted); margin:12px; font:10px 'JetBrains Mono',monospace; letter-spacing:1px; }
+/* RESPONSIVE DESIGN */
 
-.footer-links { display:flex; justify-content:center; flex-wrap:wrap; gap:25px; margin:25px; }
-.footer-links a { color:var(--muted); font-size:12px; }
-.footer-links a:hover { color:var(--green); }
+@media(max-width: 650px) {
+    .navbar {
+        padding: 16px 5%;
+    }
 
-footer .copyright { border-top:1px solid var(--border); padding-top:23px; }
+    .status {
+        font-size: 8px;
+    }
 
-@media(max-width:650px) {
-  .navbar { padding:16px 5%; }
-  .status { font-size:8px; }
-  .hero { min-height:700px; padding-top:75px; }
-  h1 { letter-spacing:-3px; }
-  .cards,.guide { grid-template-columns:1fr; }
-  .section { padding:65px 0; }
+    .hero {
+        min-height: 700px;
+        padding-top: 75px;
+    }
+
+    h1 {
+        letter-spacing: -3px;
+    }
+
+    .cards,
+    .guide {
+        grid-template-columns: 1fr;
+    }
+
+    .section {
+        padding: 65px 0;
+    }
 }
 
-@media(prefers-reduced-motion:reduce) {
-  * { scroll-behavior:auto!important; transition:none!important; }
->>>>>>> bff5ef4 (Launch modern dark JACKFRUIT landing page)
-}
+/* ACCESSIBILITY */
 
-@media(prefers-reduced-motion:reduce) {
-  * { scroll-behavior:auto!important; transition:none!important; }
+@media(prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        transition: none !important;
+    }
 }
-EOF
