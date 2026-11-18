@@ -1,114 +1,96 @@
-
+cat > index.html <<'EOF'
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#0b0f0e">
-  <title>JACKFRUIT | Android Security Research</title>
-  <link rel="stylesheet" href="assets/css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#090d0b">
+<title>JACKFRUIT — Coming Soon</title>
+<meta name="description" content="JACKFRUIT — Open-source Android security research platform.">
+<link rel="icon" href="assets/JACKFRUIT.png">
+<link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
 <nav class="navbar">
   <a href="#" class="brand">🍈 JACKFRUIT<span>.</span></a>
-  <div class="nav-links">
-    <a href="#about">About</a>
-    <a href="#features">Features</a>
-    <a href="#architecture">Architecture</a>
-    <a href="https://github.com/sangram-net/JACKFRUIT">GitHub ↗</a>
-  </div>
+  <div class="nav-status"><i></i> UNDER DEVELOPMENT</div>
 </nav>
 
-<header class="hero">
-  <div class="tag">OPEN SOURCE · ANDROID SECURITY</div>
-  <img src="assets/JACKFRUIT.png" alt="JACKFRUIT Logo" class="logo">
-  <h1>JACKFRUIT<span>.</span></h1>
-  <p class="subtitle">Android Remote Administration &<br> Security Research Platform</p>
-  <p class="description">
-    Exploring Android security, device administration,
-    networking and transparent remote management.
-  </p>
-  <div class="actions">
-    <a class="btn primary" href="https://github.com/sangram-net/JACKFRUIT">
-      Explore Repository ↗
-    </a>
-    <a class="btn secondary" href="#about">Discover Project</a>
-  </div>
-  <div class="scroll">SCROLL TO EXPLORE ↓</div>
-</header>
-
 <main>
-  <section id="about">
-    <div class="section-label">01 / INTRODUCTION</div>
-    <h2>About <span>JACKFRUIT</span></h2>
-    <p>
-      JACKFRUIT is an open-source Android remote administration
-      and security research project designed for cybersecurity
-      education, mobile security experimentation and authorized
-      Android device management.
-    </p>
-  </section>
+<section class="hero">
+  <div class="eyebrow">OPEN SOURCE · ANDROID SECURITY</div>
+  <img class="logo" src="assets/JACKFRUIT.png" alt="JACKFRUIT Logo">
+  <p class="intro">INTRODUCING</p>
+  <h1>JACKFRUIT<span>.</span></h1>
+  <h2>SOMETHING POWERFUL<br>IS <span>COMING.</span></h2>
+  <p class="description">
+    An upcoming Android Remote Administration and Security Research
+    Platform. Built for learning, transparency and authorized research.
+  </p>
+  <div class="coming">COMING SOON</div>
+  <div class="buttons">
+    <a class="primary" href="https://github.com/sangram-net/JACKFRUIT">EXPLORE GITHUB ↗</a>
+    <a class="secondary" href="#roadmap">VIEW ROADMAP ↓</a>
+  </div>
+  <p class="scroll">SCROLL TO EXPLORE ↓</p>
+</section>
 
-  <section id="features">
-    <div class="section-label">02 / CAPABILITIES</div>
-    <h2>Planned <span>Features</span></h2>
-    <div class="cards">
-      <article class="card">
-        <div class="number">01</div>
-        <h3>Device Intelligence</h3>
-        <p>Basic Android device specifications and diagnostics.</p>
-      </article>
-      <article class="card">
-        <div class="number">02</div>
-        <h3>Network Diagnostics</h3>
-        <p>Network connectivity and communication monitoring.</p>
-      </article>
-      <article class="card">
-        <div class="number">03</div>
-        <h3>Secure Communication</h3>
-        <p>Authenticated sessions and encrypted connections.</p>
-      </article>
-      <article class="card">
-        <div class="number">04</div>
-        <h3>Remote Dashboard</h3>
-        <p>A centralized interface for authorized device management.</p>
-      </article>
-    </div>
-  </section>
+<section class="section" id="about">
+  <small>01 / ABOUT THE PROJECT</small>
+  <h2>Not just another <span>Android project.</span></h2>
+  <p>JACKFRUIT is an open-source project exploring Android application architecture, device diagnostics, secure networking and transparent remote device administration.</p>
+  <p>Designed around explicit user consent, secure communication and responsible cybersecurity research.</p>
+</section>
 
-  <section id="architecture">
-    <div class="section-label">03 / TECHNOLOGY</div>
-    <h2>Technology <span>Stack</span></h2>
-    <div class="tech-stack">
-      <span>Kotlin</span>
-      <span>Python</span>
-      <span>FastAPI</span>
-      <span>React</span>
-      <span>SQLite</span>
-      <span>HTTPS</span>
-    </div>
-  </section>
+<section class="section" id="roadmap">
+  <small>02 / DEVELOPMENT ROADMAP</small>
+  <h2>Building something <span>meaningful.</span></h2>
+  <div class="cards">
+    <article><b>01</b><h3>Android Application</h3><p>Kotlin, device diagnostics and permission management.</p><label>PLANNED</label></article>
+    <article><b>02</b><h3>Backend Infrastructure</h3><p>Python, FastAPI, authentication and secure APIs.</p><label>PLANNED</label></article>
+    <article><b>03</b><h3>Web Dashboard</h3><p>Modern interface for authorized device management.</p><label>PLANNED</label></article>
+    <article><b>04</b><h3>Security & Documentation</h3><p>Security testing, installation guides and documentation.</p><label>PLANNED</label></article>
+  </div>
+</section>
 
-  <section class="security">
-    <div class="section-label">04 / SECURITY FIRST</div>
-    <h2>Privacy is <span>Not Optional.</span></h2>
-    <p>
-      JACKFRUIT is designed for explicit consent, authenticated
-      sessions, transparent permissions and authorized research.
-      No covert surveillance or unauthorized access.
-    </p>
-  </section>
+<section class="section">
+  <small>03 / TECHNOLOGY</small>
+  <h2>Powered by <span>technology.</span></h2>
+  <div class="tech">
+    <span>KOTLIN</span><span>PYTHON</span><span>FASTAPI</span>
+    <span>REACT</span><span>SQLITE</span><span>HTTPS</span>
+  </div>
+  <p class="note">Proposed technology stack. Subject to change during development.</p>
+</section>
+
+<section class="section">
+  <small>04 / OUR PRINCIPLES</small>
+  <h2>Security begins with <span>trust.</span></h2>
+  <div class="principles">
+    <p>01 — Explicit user consent</p>
+    <p>02 — Authenticated sessions</p>
+    <p>03 — Encrypted communication</p>
+    <p>04 — Transparent permissions</p>
+    <p>05 — Authorized research only</p>
+  </div>
+</section>
+
+<section class="final">
+  <small>05 / STAY CONNECTED</small>
+  <h2>The journey is <span>just beginning.</span></h2>
+  <p>Follow the repository to watch JACKFRUIT grow.</p>
+  <a class="primary" href="https://github.com/sangram-net/JACKFRUIT">FOLLOW ON GITHUB ↗</a>
+</section>
 </main>
 
 <footer>
-  <div class="brand">🍈 JACKFRUIT<span>.</span></div>
-  <p>Powerful. Transparent. Open Source.</p>
-  <a href="https://github.com/sangram-net/JACKFRUIT">
-    GitHub Repository ↗
-  </a>
-  <p class="copyright">© 2026 JACKFRUIT · MIT License</p>
+  <h3>🍈 JACKFRUIT<span>.</span></h3>
+  <p>POWERFUL. TRANSPARENT. OPEN SOURCE.</p>
+  <a href="https://github.com/sangram-net/JACKFRUIT">GitHub Repository ↗</a>
+  <p class="copyright">© 2026 JACKFRUIT PROJECT · MIT LICENSE</p>
 </footer>
 
 </body>
 </html>
+EOF
