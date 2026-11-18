@@ -1,18 +1,27 @@
+<<<<<<< HEAD
 cat > index.html <<'EOF'
+=======
+>>>>>>> bff5ef4 (Launch modern dark JACKFRUIT landing page)
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#090d0b">
+<<<<<<< HEAD
 <title>JACKFRUIT — Coming Soon</title>
 <meta name="description" content="JACKFRUIT — Open-source Android security research platform.">
+=======
+<title>JACKFRUIT — Android RAT</title>
+<meta name="description" content="JACKFRUIT is an open-source Android Remote Access Trojan (RAT) project, currently under development.">
+>>>>>>> bff5ef4 (Launch modern dark JACKFRUIT landing page)
 <link rel="icon" href="assets/JACKFRUIT.png">
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
 <nav class="navbar">
+<<<<<<< HEAD
   <a href="#" class="brand">🍈 JACKFRUIT<span>.</span></a>
   <div class="nav-status"><i></i> UNDER DEVELOPMENT</div>
 </nav>
@@ -73,21 +82,296 @@ cat > index.html <<'EOF'
     <p>03 — Encrypted communication</p>
     <p>04 — Transparent permissions</p>
     <p>05 — Authorized research only</p>
+=======
+  <a class="brand" href="#">🍈 JACKFRUIT<span>.</span></a>
+  <div class="status"><i></i> UNDER DEVELOPMENT</div>
+</nav>
+
+<main>
+
+<section class="hero">
+  <div class="eyebrow">OPEN SOURCE · ANDROID SECURITY</div>
+  <img class="logo" src="assets/JACKFRUIT.png" alt="JACKFRUIT Logo">
+
+  <p class="intro">INTRODUCING</p>
+  <h1>JACKFRUIT<span>.</span></h1>
+  <h2>ANDROID REMOTE<br>ACCESS <span>TROJAN.</span></h2>
+
+  <div class="release">PROJECT STATUS: UNDER DEVELOPMENT</div>
+
+  <p class="description">
+    JACKFRUIT is an open-source Android Remote Access Trojan
+    (RAT) project developed for controlled laboratory research,
+    Android security experimentation and authorized device testing.
+  </p>
+
+  <div class="buttons">
+    <a class="primary" href="https://github.com/sangram-net/JACKFRUIT">
+      GITHUB REPOSITORY ↗
+    </a>
+    <a class="secondary" href="#installation">GETTING STARTED ↓</a>
+  </div>
+
+  <p class="scroll">SCROLL TO EXPLORE ↓</p>
+</section>
+
+<section class="section" id="about">
+  <small>01 / ABOUT JACKFRUIT</small>
+  <h2>What is <span>JACKFRUIT?</span></h2>
+
+  <p>
+    JACKFRUIT is an Android Remote Access Trojan (RAT)
+    project. It explores remote device administration,
+    Android application architecture, client-server
+    communication and mobile security.
+  </p>
+
+  <p>
+    The project is currently under development. Its intended
+    research environment uses explicit device-owner consent,
+    transparent permissions and authenticated communication.
+  </p>
+
+  <div class="warning">
+    <strong>Development notice</strong>
+    <p>
+      This repository is not a finished or production-ready
+      application. Use only on devices you own or have
+      explicit authorization to test. No covert access,
+      permission bypass or unauthorized surveillance is intended.
+    </p>
+  </div>
+</section>
+
+<section class="section" id="features">
+  <small>02 / PROJECT SCOPE</small>
+  <h2>What we're <span>building.</span></h2>
+
+  <div class="cards">
+    <article>
+      <b>01</b>
+      <h3>Android Client</h3>
+      <p>Android application architecture and transparent permission handling.</p>
+      <label>PLANNED</label>
+    </article>
+
+    <article>
+      <b>02</b>
+      <h3>Backend Server</h3>
+      <p>Authenticated API communication and session management.</p>
+      <label>PLANNED</label>
+    </article>
+
+    <article>
+      <b>03</b>
+      <h3>Web Dashboard</h3>
+      <p>Interface for managing authorized test devices.</p>
+      <label>PLANNED</label>
+    </article>
+
+    <article>
+      <b>04</b>
+      <h3>Security Research</h3>
+      <p>Permission analysis, security testing and documentation.</p>
+      <label>PLANNED</label>
+    </article>
+  </div>
+</section>
+
+<section class="section" id="structure">
+  <small>03 / REPOSITORY STRUCTURE</small>
+  <h2>Explore the <span>source code.</span></h2>
+  <p>The current repository layout and planned development areas:</p>
+
+  <pre class="tree"><code>JACKFRUIT/
+│
+├── assets/
+│   ├── css/
+│   │   └── style.css
+│   └── JACKFRUIT.png
+│
+├── android/              [PLANNED]
+│   └── app/
+│
+├── server/
+│   ├── api/              [PLANNED]
+│   ├── authentication/   [PLANNED]
+│   └── requirements.txt
+│
+├── dashboard/            [PLANNED]
+│   └── src/
+│
+├── docs/
+│   ├── architecture.md
+│   ├── installation.md
+│   └── security.md
+│
+├── screenshots/
+├── .gitignore
+├── LICENSE
+├── README.md
+└── index.html</code></pre>
+
+  <a class="text-link" href="https://github.com/sangram-net/JACKFRUIT">
+    VIEW ALL REPOSITORY FILES ↗
+  </a>
+</section>
+
+<section class="section" id="technology">
+  <small>04 / TECHNOLOGY STACK</small>
+  <h2>Technology <span>behind JACKFRUIT.</span></h2>
+
+  <p>Current website and repository tools, alongside the proposed application stack.</p>
+
+  <h3 class="subheading">Currently used</h3>
+  <div class="tech">
+    <span>HTML5</span>
+    <span>CSS3</span>
+    <span>Git</span>
+    <span>GitHub</span>
+    <span>GitHub Pages</span>
+  </div>
+
+  <h3 class="subheading">Planned for development</h3>
+  <div class="tech">
+    <span>Kotlin</span>
+    <span>Android SDK</span>
+    <span>Python</span>
+    <span>FastAPI</span>
+    <span>React</span>
+    <span>SQLite</span>
+    <span>HTTPS / TLS</span>
+  </div>
+
+  <p class="note">
+    Planned technologies are not necessarily implemented.
+    The stack may evolve during development.
+  </p>
+</section>
+
+<section class="section" id="installation">
+  <small>05 / USER GUIDE</small>
+  <h2>Getting started <span>step by step.</span></h2>
+
+  <p>
+    Anyone can explore the public repository without installing
+    or running the Android application.
+  </p>
+
+  <div class="guide">
+    <article>
+      <b>STEP 01</b>
+      <h3>Install Git</h3>
+      <p>Install Git on Linux, Windows or macOS.</p>
+      <code>git --version</code>
+    </article>
+
+    <article>
+      <b>STEP 02</b>
+      <h3>Clone the repository</h3>
+      <p>Download the public JACKFRUIT source code.</p>
+      <code>git clone https://github.com/sangram-net/JACKFRUIT.git</code>
+    </article>
+
+    <article>
+      <b>STEP 03</b>
+      <h3>Enter the project</h3>
+      <code>cd JACKFRUIT</code>
+    </article>
+
+    <article>
+      <b>STEP 04</b>
+      <h3>Explore the documentation</h3>
+      <p>Read the README and documentation before using any project components.</p>
+      <code>cat README.md</code>
+    </article>
+
+    <article>
+      <b>STEP 05</b>
+      <h3>Explore the website locally</h3>
+      <p>Python 3 can serve the static project homepage.</p>
+      <code>python3 -m http.server 8000</code>
+      <p>Open http://localhost:8000 in your browser.</p>
+    </article>
+
+    <article>
+      <b>STEP 06</b>
+      <h3>Follow development</h3>
+      <p>Check GitHub for source updates, releases and future installation instructions.</p>
+      <a class="text-link" href="https://github.com/sangram-net/JACKFRUIT">
+        OPEN GITHUB ↗
+      </a>
+    </article>
+  </div>
+
+  <div class="warning">
+    <strong>Before using the Android application</strong>
+    <p>
+      There is currently no documented stable application release.
+      Do not install unverified APKs. Wait for official release
+      instructions and test only with explicit authorization.
+    </p>
+  </div>
+</section>
+
+<section class="section" id="security">
+  <small>06 / SECURITY & RESPONSIBILITY</small>
+  <h2>Research with <span>responsibility.</span></h2>
+  <div class="principles">
+    <p>01 — Explicit user consent</p>
+    <p>02 — Authenticated access</p>
+    <p>03 — Encrypted communication</p>
+    <p>04 — Transparent permissions</p>
+    <p>05 — Authorized laboratory testing</p>
+    <p>06 — No covert surveillance</p>
+>>>>>>> bff5ef4 (Launch modern dark JACKFRUIT landing page)
   </div>
 </section>
 
 <section class="final">
+<<<<<<< HEAD
   <small>05 / STAY CONNECTED</small>
   <h2>The journey is <span>just beginning.</span></h2>
   <p>Follow the repository to watch JACKFRUIT grow.</p>
   <a class="primary" href="https://github.com/sangram-net/JACKFRUIT">FOLLOW ON GITHUB ↗</a>
 </section>
+=======
+  <small>07 / FOLLOW THE DEVELOPMENT</small>
+  <h2>Something powerful is <span>growing.</span></h2>
+  <p>
+    JACKFRUIT is under development. Explore the source,
+    follow progress and contribute responsibly.
+  </p>
+
+  <div class="buttons">
+    <a class="primary" href="https://github.com/sangram-net/JACKFRUIT">
+      VIEW GITHUB ↗
+    </a>
+    <a class="secondary"
+       href="https://github.com/sangram-net/JACKFRUIT.git">
+      CLONE URL ↗
+    </a>
+  </div>
+</section>
+
+>>>>>>> bff5ef4 (Launch modern dark JACKFRUIT landing page)
 </main>
 
 <footer>
   <h3>🍈 JACKFRUIT<span>.</span></h3>
+<<<<<<< HEAD
   <p>POWERFUL. TRANSPARENT. OPEN SOURCE.</p>
   <a href="https://github.com/sangram-net/JACKFRUIT">GitHub Repository ↗</a>
+=======
+  <p>ANDROID REMOTE ACCESS TROJAN · UNDER DEVELOPMENT</p>
+
+  <div class="footer-links">
+    <a href="https://github.com/sangram-net/JACKFRUIT">Repository</a>
+    <a href="https://github.com/sangram-net">Developer</a>
+    <a href="https://github.com/sangram-net/JACKFRUIT/issues">Issues</a>
+  </div>
+
+>>>>>>> bff5ef4 (Launch modern dark JACKFRUIT landing page)
   <p class="copyright">© 2026 JACKFRUIT PROJECT · MIT LICENSE</p>
 </footer>
 
